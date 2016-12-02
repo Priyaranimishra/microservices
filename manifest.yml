@@ -1,10 +1,10 @@
 ---
 applications:
-- name: electiondata_stream_demo
+- name: ElectionResult_demo
   memory: 512M 
   instances: 1
   buildpack: java_buildpack
-  host: electiondata_stream_demo
+  host: ElectionResult_demo
   path: producer/src
   timeout: 90
   services:
@@ -16,7 +16,7 @@ applications:
   memory: 512M 
   instances: 1
   buildpack: java_buildpack
-  host: electiondashboard_demo
+  host: ElectionResult_demo
   path: consumer/target/pcfdemo-map.war
   timeout: 90
   services:
