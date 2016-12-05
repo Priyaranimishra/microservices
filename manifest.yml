@@ -17,7 +17,7 @@ applications:
   instances: 1
   buildpack: java_buildpack
   host: ElectionResult_demo
-  path: consumer/target/pcfdemo-map.war
+  path: consumer/web/build/libs/electionResult.war
   timeout: 90
   services:
    - monitoring
