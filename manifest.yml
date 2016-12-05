@@ -4,7 +4,7 @@ applications:
   memory: 512M 
   instances: 1
   buildpack: java_buildpack
-  host: ElectionResult_demo
+  host: PwsElectionResult_producer
   path: producer/src
   timeout: 90
   services:
@@ -16,7 +16,7 @@ applications:
   memory: 512M 
   instances: 1
   buildpack: java_buildpack
-  host: ElectionResult_demo
+  host: pwsElectionResult_consumer
   path: consumer/web/build/libs/electionResult.war
   timeout: 90
   services:
